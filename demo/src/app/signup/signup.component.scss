@@ -1,0 +1,98 @@
+mat-card{
+    background: #282a36;
+    max-width: 600px;
+    margin: 5em auto;
+    text-align: center;
+    max-height: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 1cm;
+}
+.header{
+    text-align: center;
+}
+.full-width{
+    width: 80%;
+}
+.email-input{
+    padding-top: 10px;
+}
+.password-input{
+    padding-top: 10px;
+}
+.aLink{
+    float: right;
+    padding-right: 60px;
+    text-decoration: none;
+     
+}
+button{
+    margin-left: 50px;   
+}
+span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.app-header {
+  // Set primary color
+  background-color: #282a36;
+
+  // Add padding
+  padding: 0 16px;
+
+  // Center the content vertically
+  display: flex;
+  align-items: center;
+
+  // Style the nested elements
+  div {
+    a {
+      // Style the company name link
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .nav-tool-items {
+    // Align the navigation links to the right
+    margin-left: auto;
+
+    a {
+      // Style the navigation links
+      color: #282a36;
+      font-size: 16px;
+      margin-left: 8px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        // Style the active link
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+.firstname-input{
+    padding-top: 7px;
+}
+.lastname-input{
+    padding-top: 7px;
+}
+.institutionname-input{
+    padding-top: 7px;
+}
+.email-input{
+    padding-top: 7px;
+}

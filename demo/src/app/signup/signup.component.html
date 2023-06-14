@@ -1,0 +1,45 @@
+<mat-toolbar color="primary" class="app-header">
+    <div><a href="" target="_blank" class="positronx">STAL Technologies</a></div>
+    <span class="nav-tool-items">
+        <a mat-button mat-raised-button routerLink="/login" routerLinkActive="active">Login</a>
+    </span>
+</mat-toolbar>
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>Welcome! Please create an account to proceed</h2>
+        </div>
+        <form (ngSubmit)="onSignup()" name="signUpForm" [formGroup]="signUpForm">
+             <div class="firstname-input">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>First Name</mat-label>
+                    <input formControlName = "firstname" matInput required>
+                    <mat-error *ngIf="signUpForm.get('firstname')?.errors?.['required']">Required First Name</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="lastname-input">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Last Name</mat-label>
+                    <input formControlName = "lastname" matInput required>
+                    <mat-error *ngIf="signUpForm.get('lastnamename')?.errors?.['required']">Required Last Name</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="email-input">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input formControlName = "email" matInput required>
+                    <mat-error *ngIf="signUpForm.get('email')?.errors?.['required']">Required Email Adress</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="institutionname-input">
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Institution</mat-label>
+                    <input formControlName = "institution" matInput required>
+                    <mat-error *ngIf="signUpForm.get('institution')?.errors?.['required']">Required Institution</mat-error>
+                </mat-form-field>
+            </div>
+            
+            <a mat-button mat-raised-button routerLink="/createpassword" routerLinkActive="active">Next</a>
+        </form>
+    </mat-card-content>
+</mat-card>
